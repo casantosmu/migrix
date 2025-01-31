@@ -1,0 +1,38 @@
+{
+  "name": "migrix",
+  "version": "0.0.0",
+  "description": "SQL migration CLI tool",
+  "type": "module",
+  "author": "Carlos Santos <contact@casantosmu.com>",
+  "license": "MIT",
+  "keywords": [
+    "sql",
+    "migration",
+    "migrations",
+    "schema",
+    "postgresql",
+    "postgres",
+    "database",
+    "db",
+    "raw-sql",
+    "cli"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/casantosmu/migrix.git"
+  },
+  "bugs": {
+    "url": "https://github.com/casantosmu/migrix/issues"
+  },
+  "homepage": "https://github.com/casantosmu/migrix#readme",
+  "engines": {
+    "node": "^20.12.0 || ^21.7.0 || >=22.0.0"
+  },
+  "bin": {
+    "migrate": "./src/index.js"
+  },
+  "dependencies": {
+    "commander": "^13.1.0",
+    "pg": "^8.13.1"
+  }
+}
