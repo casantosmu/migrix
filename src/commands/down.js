@@ -18,7 +18,7 @@ export async function down(options) {
     await ensureMigrationsTable(client, options.table);
 
     const { rows: migrations } = await client.query(
-      `SELECT name FROM ${options.table} ORDER BY executed_at DESC LIMIT 1`
+      `SELECT name FROM ${options.table} ORDER BY id DESC LIMIT 1`
     );
 
     if (migrations.length === 0) {
